@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .name {
+             color:green;
+        }
+    </style>
+</head>
+<body>
+    <p><b>Inner Text Example :</b></p>
+    <p id="innertext"></p>
+    <br>
+    <p><b>Inner HTML Example</b></p>
+    <p id="innerhtml"></p>
+
+    <script>
+        var myStr = 'My name is <b class="name">Dipta Saha</b>.';
+        document.getElementById('innertext').innerText = myStr;
+        document.getElementById('innerhtml').innerHTML = myStr;
+    </script>
+</body>
+</html>
